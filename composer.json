@@ -1,5 +1,5 @@
 {
-    "name": "league/oauth2-server-bundle",
+    "name": "ibexa/oauth2-server-bundle",
     "type": "symfony-bundle",
     "description": "Symfony bundle .",
     "keywords": ["oauth2", "authorization", "server", "bundle", "auth", "bundle"],
@@ -15,6 +15,9 @@
             "homepage": "https://github.com/thephpleague/oauth2-server-bundle/graphs/contributors"
         }
     ],
+    "replace": {
+        "league/oauth2-server-bundle": "self.version"
+    },
     "require": {
         "php": ">=7.2",
         "doctrine/doctrine-bundle": "^2.0.8",
