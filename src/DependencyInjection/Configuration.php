@@ -225,6 +225,10 @@ final class Configuration implements ConfigurationInterface
                         ->end()
                     ->end()
                 ->end()
+                // Extensibility point
+                ->scalarNode('custom')
+                    ->cannotBeEmpty()
+                ->end()
             ->end()
         ;
 
